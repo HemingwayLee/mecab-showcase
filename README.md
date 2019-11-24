@@ -55,6 +55,19 @@ echo "日本語形態素解析" | mecab
 EOS
 ```
 
+## Run MeCab using python3
 
+### Prerequisite
+```
+python3 -m virtualenv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
+ 
+### with Jupyter notebook
+```
+ipython kernel install --user --name=venv
+jupyter notebook
+```
 
 
