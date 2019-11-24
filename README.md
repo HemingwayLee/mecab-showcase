@@ -42,7 +42,7 @@ docker run -it --rm smizy/mecab:0.996-alpine
 EOS
 ```
 
-## Run MeCab using command line
+## Run `MeCab` using command line
 ```
 echo "日本語形態素解析" | mecab
 ```
@@ -55,7 +55,7 @@ echo "日本語形態素解析" | mecab
 EOS
 ```
 
-## Run MeCab using python3
+## Run `MeCab` using python3
 
 ### Prerequisite
 ```
@@ -72,3 +72,12 @@ jupyter notebook
 
 * Retrain `word2vec` with MeCab, [code](https://github.com/HemingwayLee/japanese-words-to-vectors) 
 * Use MeCab with `Keras`, [lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [feedforward neural network](https://github.com/HemingwayLee/keras-showcase/blob/master/feedforward/classification.ipynb)
+
+## Compare with `cabocha` and `JUMAN++`
+* `MeCab` is the most popular tokenizer  
+* `JUMAN++` is more accurate than `MeCab`, but it is also slower than `MeCab`  
+* `cabocha` is base on `MeCab`, but it can detect more named entities  
+
+### Paper 
+https://www.aclweb.org/anthology/D15-1276  
+https://www.anlp.jp/proceedings/annual_meeting/2018/pdf_dir/A5-2.pdf  
