@@ -64,10 +64,11 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
  
-### with Jupyter notebook
+* [sample code](https://github.com/HemingwayLee/mecab-showcase/blob/master/HelloMeCab.ipynb)
 ```
 ipython kernel install --user --name=venv
 jupyter notebook
 ```
 
-
+* Retrain `word2vec` with MeCab, [code](https://github.com/HemingwayLee/japanese-words-to-vectors) 
+* Use MeCab with `Keras`, [lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [feedforward neural network](https://github.com/HemingwayLee/keras-showcase/blob/master/feedforward/classification.ipynb)
