@@ -71,7 +71,8 @@ jupyter notebook
 ```
 
 * Retrain `word2vec` with MeCab, [code](https://github.com/HemingwayLee/japanese-words-to-vectors) 
-* Use MeCab with `Keras`, [lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [feedforward neural network](https://github.com/HemingwayLee/keras-showcase/blob/master/feedforward/classification.ipynb)
+* Pre-trained word embedding with MeCab, [link](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)
+* Use MeCab with `Keras`, [lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [named entity recognition with lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/ner.ipynb)
 
 ## Compare with `cabocha` and `JUMAN++`
 * `MeCab` is the most popular tokenizer  
