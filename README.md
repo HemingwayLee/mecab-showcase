@@ -1,6 +1,6 @@
 # mecab-showcase
 
-## Install
+## Installation
 ### Mac
 ```
 brew install mecab
@@ -23,7 +23,10 @@ sudo ./bin/install-mecab-ipadic-neologd -n
 pip3 install mecab-python3
 ```
 
+* Note: the installation of [mecab-ipadic-neologd](https://github.com/neologd/mecab-ipadic-neologd) is optional. `mecab-ipadic-neologd` is customized system dictionary for MeCab. It includes many neologisms (new word), which are extracted from many language resources on the Web.
+
 ### Docker
+#### Use the one from [smizy](https://github.com/smizy/docker-mecab)
 ```
 docker pull smizy/mecab:0.996-alpine
 docker run -it --rm smizy/mecab:0.996-alpine
@@ -33,6 +36,8 @@ docker run -it --rm smizy/mecab:0.996-alpine
 ```
 科学基礎研究所
 ```
+
+#### Use the one from here
 
 * Result
 ```
