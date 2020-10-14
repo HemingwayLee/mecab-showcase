@@ -48,8 +48,8 @@ EOS
 #### Use the one from [here](https://github.com/HemingwayLee/mecab-showcase/blob/master/Dockerfile)
 * Installation
 ```
-git clone 
-cd 
+git clone https://github.com/HemingwayLee/mecab-showcase.git
+cd mecab-showcase
 docker build mymecab -t .
 docker run -it --rm mymecab
 ```
