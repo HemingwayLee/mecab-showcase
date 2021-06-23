@@ -74,6 +74,12 @@ jupyter notebook
 * Pre-trained word embedding with MeCab, [link](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)
 * Use MeCab with `Keras`, [lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [named entity recognition with lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/ner.ipynb)
 
+### python docker with mecab installed
+```
+docker build -t mymecab -f python.dockerfile .
+docker run -it --rm -p8899:8888 -v $(pwd):/home/test/ mymecab
+```
+
 ## Compare with `cabocha` and `JUMAN++`
 * `MeCab` is the most popular tokenizer  
 * `JUMAN++` is more accurate than `MeCab`, but it is also slower than `MeCab`  
@@ -82,3 +88,4 @@ jupyter notebook
 ### Paper 
 https://www.aclweb.org/anthology/D15-1276  
 https://www.anlp.jp/proceedings/annual_meeting/2018/pdf_dir/A5-2.pdf  
+

@@ -1,2 +1,4 @@
 ipykernel
 mecab-python3
+jupyter
+
