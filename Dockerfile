@@ -10,7 +10,7 @@ WORKDIR /mecab-ipadic-neologd
 RUN (echo "yes" && cat)  | ./bin/install-mecab-ipadic-neologd -n
 
 RUN mkdir -p /home/test
-COPY test.txt /home/test/test.txt
+COPY ./text/ori.txt /home/test/test.txt
 WORKDIR /home/test/
 
 RUN cat test.txt | mecab
