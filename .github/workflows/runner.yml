@@ -1,0 +1,17 @@
+name: Publish Docker image
+on:
+  push: {branches: master}
+jobs:
+  test_main_docker:
+    name: Test the main docker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Check environment
+        run: |
+          ls
+          pwd
+      - name: Build Dockerfile
+        run: docker build -t mymecab .
+
