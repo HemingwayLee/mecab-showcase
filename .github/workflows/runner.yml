@@ -16,7 +16,7 @@ jobs:
         run: docker build -t mymecab .
       - name: Run Dockerfile with mecab
         run: docker run -it --rm mymecab /bin/bash -c 'cat test.txt | mecab'
-      - name: Run Dockerfile with mecab
+      - name: Run Dockerfile with mecab-ipadic-neologd
         run: docker run -it --rm mymecab /bin/bash -c 'cat test.txt | mecab -d /usr/lib/mecab/dic/mecab-ipadic-neologd/'
 
 
