@@ -10,9 +10,13 @@ WORKDIR /mecab-ipadic-neologd
 RUN (echo "yes" && cat)  | ./bin/install-mecab-ipadic-neologd -n
 
 RUN mkdir -p /home/test
-COPY test.txt /home/test/test.txt
+COPY ./text/* /home/test/
+COPY ./csv/myname.csv /home/test/
 WORKDIR /home/test/
+RUN /usr/lib/mecab/mecab-dict-index -d /usr/share/mecab/dic/ipadic/ -u myname.dic -f utf8 -t utf8 /home/test/myname.csv
 
-RUN cat test.txt | mecab
-RUN cat test.txt | mecab -d /usr/lib/mecab/dic/mecab-ipadic-neologd/
+RUN cat tank.txt | mecab
+RUN cat tank.txt | mecab -u myname.dic
 
+RUN cat kimetsu_no_yaiba.txt | mecab
+RUN cat kimetsu_no_yaiba.txt | mecab -u myname.dic
