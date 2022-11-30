@@ -137,7 +137,7 @@ jupyter notebook
 ## Use MeCab for other NLP tasks
 * Retrain `word2vec` with MeCab, [code](https://github.com/HemingwayLee/japanese-words-to-vectors) 
 * Pre-trained word embedding with MeCab, [link](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)
-* Use MeCab with `Keras`, [lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [named entity recognition with lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/ner.ipynb)
+* Use MeCab with `Keras`, [sentence classification](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/classification.ipynb), [named entity recognition with lstm](https://github.com/HemingwayLee/keras-showcase/blob/master/lstm/ner.ipynb)
 
 ### python docker with mecab installed
 ```
